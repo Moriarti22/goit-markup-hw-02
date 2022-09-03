@@ -1,0 +1,114 @@
+
+
+/* колір основного тексту #212121 */
+/* додатковий колір сірий #757575 */
+/* колір лого синій #2196F3 чорний #000000 */
+/* акцент і емейл #2196F3 */
+/* білий колір */
+/* Боді білий #F5F5F5 */
+/* Другий колір фона світло сірий #F5F4FA */
+/* focus колір #2196F3  */
+
+:root {
+    --primary-color-text: #212121;
+    --accent-color: #2196F3;
+    --second-color: #757575;
+}
+
+/* Герой */
+
+.heading {
+    text-transform: uppercase;
+}
+
+/* Button */
+
+.button {
+    color: #FFFFFF;
+    background-color: var(--accent-color);
+    text-decoration: none;
+}
+
+/* Боді */
+
+body {
+    background-color: #F5F5F5;
+    color: var(--primary-color-text);
+}
+.list {
+    list-style: none;
+}
+.logo {
+    color: #000000;
+    text-decoration: none;
+}
+.logo-blue {
+    color: #2196F3;
+}
+
+/* Сайт nav */
+
+.site-nav a {
+    text-decoration: none;
+    color: #212121;
+}
+.site-nav .link:focus,
+.site-nav .link:hover {
+    color: var(--accent-color);
+}
+
+.site-nav .link.current {
+    color: #2196F3;
+}
+
+.nav-contacts {
+    color: var(--second-color);
+    text-decoration: none;
+}
+.nav-contacts:focus,
+.nav-contacts:hover {
+    color: var(--accent-color);
+}
+
+
+/* index.html */
+
+/* Section */
+.section-title {
+    color: var(--primary-color-text);
+}
+
+/* Features */
+
+.feature-list .title {
+    color: var(--primary-color-text);
+}
+.title.uppercase {
+    text-transform: uppercase;
+}
+
+.feature-list .text {
+    color: var(--second-color);
+}
+
+
+/* portfolio.html */
+
+.filter {
+    text-decoration: none;
+    list-style: none;
+}
+
+.projects {
+    color: var(--primary-color-text);
+    list-style: none;
+}
+
+.projects a{
+    color: var(--primary-color-text);
+    text-decoration: none;
+}
+
+.projects p{
+    color: var(--second-color);
+}
