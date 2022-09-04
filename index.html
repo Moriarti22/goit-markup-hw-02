@@ -5,6 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
@@ -12,7 +22,7 @@
         <nav>
             <a class="logo" href="/"><span class="logo-blue">Web</span>Studio</a>
         <ul class="list site-nav">
-            <li><a class="link current" href="./index.html">Студія</a></li>
+            <li><a class="link" href="./index.html">Студія</a></li>
             <li><a class="link" href="./portfolio.html">Портфоліо</a></li>
             <li><a class="link" href="">Контакти</a></li>            
         </ul>
@@ -24,12 +34,10 @@
 <!-- Герой -->
         <section>
                 <h1 class="heading">Ефективні рішення для вашого бізнесу</h1>
-                <button type="button">Замовити послугу</button>
+                <button class="button order" type="button">Замовити послугу</button>
         </section>
 
     <section class="section">
-        <!-- Пишемо H2 але на сайті не показуємо -->
-        <h2 class="section-title">Наші переваги</h2>
             <ul class="feature-list">
                 <li>
                     <h3 class="title uppercase">Увага до деталей</h3>
@@ -64,33 +72,33 @@
         <ul class="list feature-list">
             <li>
                 <img src="./images/igor-demianenko.jpg" alt="Ігор Дем`яненко" width="270" height="260"/>
-                <h3 class="title">Ігор Дем&#39;яненко</h3>
-                <p class="text">Product Designer</p>
+                <h3 class="team">Ігор Дем&#39;яненко</h3>
+                <p class="team-profession">Product Designer</p>
             </li>
             <li>
                 <img src="./images/olga-repina.jpg" alt="Ольга Рєпіна" width="270" height="260"/>
-                <h3 class="title">Ольга Рєпіна</h3>
-                <p class="text">Frontend Developer</p>
+                <h3 class="team">Ольга Рєпіна</h3>
+                <p class="team-profession">Frontend Developer</p>
             </li>
             <li>
                 <img src="./images/mykola-tarasov.jpg" alt="Микола Тарасов" width="270" height="260"/>
-                <h3 class="title">Микола Тарасов</h3>
-                <p class="text">Marketing</p>
+                <h3 class="team">Микола Тарасов</h3>
+                <p class="team-profession">Marketing</p>
             </li>
             <li>
                 <img src="./images/mychaylo-jermakov.jpg" alt="Михайло Єрмаков" width="270" height="260"/>
-                <h3 class="title">Михайло Єрмаков</h3>
-                <p class="text">UI Designer</p>
+                <h3 class="team">Михайло Єрмаков</h3>
+                <p class="team-profession">UI Designer</p>
             </li>
         </ul>
     </section>
     </main>
     <footer>
         <a class="logo" href="/"><span class="logo-blue">Web</span>Studio</a>
-        <address>
-            м. Київ, пр-т Лесі Українки, 26<br />
-            info@devstudio.com<br />
-            +38 096 111 11 11
+        <address class="address">
+            <p>м. Київ, пр-т Лесі Українки, 26</p>
+            <p>info@devstudio.com</p>
+            <p>+38 096 111 11 11</p>
         </address>
     </footer>
 </body>
