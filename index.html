@@ -18,44 +18,52 @@
     <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
-    <header>
-        <nav>
-            <a class="logo" href="/"><span class="logo-blue">Web</span>Studio</a>
-        <ul class="list site-nav">
-            <li><a class="link" href="./index.html">Студія</a></li>
-            <li><a class="link" href="./portfolio.html">Портфоліо</a></li>
-            <li><a class="link" href="">Контакти</a></li>            
-        </ul>
-        </nav>
+    <header class="header">
+        <div class="container">
+            <nav>
+                <a class="logo" href="/"><span class="logo-blue">Web</span>Studio</a>
+                <ul class="list site-nav">
+                    <li><a class="link" href="./index.html">Студія</a></li>
+                    <li><a class="link" href="./portfolio.html">Портфоліо</a></li>
+                    <li><a class="link" href="">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container">
             <a class="nav-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
             <a class="nav-contacts" href="tel:+380961111111">+38 096 111 11 11</a>
+        </div>
     </header>
     <main>
 <!-- Герой -->
-        <section>
+        <section class="hero">
+            <div class="container">
                 <h1 class="heading">Ефективні рішення для вашого бізнесу</h1>
                 <button class="button order" type="button">Замовити послугу</button>
+            </div>
         </section>
 
-    <section class="section">
-            <ul class="feature-list">
-                <li>
-                    <h3 class="title uppercase">Увага до деталей</h3>
-                    <p class="text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+    <section>
+        <div class="container">
+        <ul class="feature-list">
+            <li>
+            <h3 class="title uppercase">Увага до деталей</h3>
+            <p class="text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+            </li>
+            <li>
+                <h3 class="title uppercase">Пунктуальність</h3>
+                <p class="text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+            </li>
+            <li>
+                <h3 class="title uppercase">Планування</h3>
+                <p class="text">Так само консультація з широким активом значною мірою зумовлює.</p>
                 </li>
-                <li>
-                    <h3 class="title uppercase">Пунктуальність</h3>
-                    <p class="text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
-                </li>
-                <li>
-                    <h3 class="title uppercase">Планування</h3>
-                    <p class="text">Так само консультація з широким активом значною мірою зумовлює.</p>
-                </li>
-                <li>
-                    <h3 class="title uppercase">Сучасні технології</h3>
-                    <p class="text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
-                </li>
-            </ul>
+            <li>
+                <h3 class="title uppercase">Сучасні технології</h3>
+                <p class="text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+            </li>
+        </ul>
+        </div>
     </section>
 
     <section class="section">
@@ -93,6 +101,7 @@
         </ul>
     </section>
     </main>
+    
     <footer>
         <a class="logo" href="/"><span class="logo-blue">Web</span>Studio</a>
         <address class="address">
