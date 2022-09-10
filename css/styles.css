@@ -62,19 +62,19 @@ body {
     line-height: 1.1428;
 }
 
-.contacts > ul {
+.contact > ul {
     list-style: none;
 }
 
-.contacts a {
+.contact a {
     color: var(--second-color);
     text-decoration: none;
     font-size: 14px;
     font-weight: 500;
 }
 
-.contacts a:focus,
-.contacts a:hover {
+.contact a:focus,
+.contact a:hover {
     color: var(--accent-color);
 }
 
@@ -186,11 +186,11 @@ body {
 
 /* Секція filter */
 
-.filter > ul {
+.sorting > ul {
     list-style: none;
 }
 
-.filter button {
+.sorting button {
     cursor: pointer;
     color: var(--primary-color-text);
     background-color: var(--backgraund-color-button);
@@ -198,7 +198,12 @@ body {
     font-weight: 500;
     line-height: 1.625;
     border-radius: 4px;
- 
+}
+
+.sorting button:focus,
+.sorting button:hover {
+    background-color: var(--accent-color);
+    color: var(--white-color-text);
 }
 
 /* Секція projects */
