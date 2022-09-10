@@ -9,6 +9,7 @@
 /* focus колір #2196F3  */
 
 :root {
+    --background-color: #F5F5F5;
     --color-logo-black: #000000;
     --primary-color-text: #212121;
     --accent-color: #2196F3;
@@ -21,7 +22,7 @@
 /* Боді */
 
 body {
-    background-color: #F5F5F5;
+    background-color: var(--background-color);
     color: var(--primary-color-text);
     font-family: 'Roboto', sans-serif;
 }
@@ -178,6 +179,11 @@ body {
     font-size: 14px;
     line-height: 1.7142;
     font-style: normal;
+}
+
+.address a:hover,
+.address a:focus {
+    color: var(--accent-color);
 }
 
 /*  */
