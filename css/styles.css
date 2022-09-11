@@ -123,6 +123,7 @@ body {
 .hero .order {
     background-color: var(--backgraund-color-button);
     border-color: transparent;
+    font-family: inherit;
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
@@ -241,6 +242,7 @@ body {
 
 .button {
     cursor: pointer;
+    font-family: inherit;
     color: var(--primary-color-text);
     background-color: var(--backgraund-color-button);
     border-radius: 4px;
