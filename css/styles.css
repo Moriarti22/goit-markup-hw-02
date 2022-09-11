@@ -26,7 +26,7 @@
 body {
     background-color: var(--background-color);
     color: var(--primary-color-text);
-    font-family: 'Roboto', sans-serif;
+    font-family: Roboto, sans-serif;
 }
 
 
@@ -44,7 +44,7 @@ body {
 .logo {
     color: var(--color-logo-black);
     text-decoration: none;
-    font-family: 'Raleway', sans-serif;
+    font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -74,6 +74,10 @@ body {
 
 .site-nav .menu:focus,
 .site-nav .menu:hover {
+    color: var(--accent-color);
+}
+
+.site-nav .menu.current {
     color: var(--accent-color);
 }
 
@@ -138,7 +142,7 @@ body {
     list-style: none;
 }
 
-.feature-list .title  {
+.feature-list .feature-title  {
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 700;
@@ -160,7 +164,7 @@ body {
     list-style: none;
 }
 
-.section-work .title {
+.title {
     text-align: center;
     font-size: 36px;
     font-weight: 700;
@@ -179,13 +183,6 @@ body {
     background-color: var(--background-color);
 }
 
-.our-team .title {
-    text-align: center;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
-}
 
 .our-team .team {
     font-size: 16px;
@@ -239,18 +236,15 @@ body {
 /* portfolio.html */
 /*  */
 
-/* Секція projects */
-
-.projects .list {
+.list {
     list-style: none;
+}
+
+.link {
     text-decoration: none;
 }
 
-.projects .link {
-    text-decoration: none;
-}
-
-.projects .button {
+.button {
     cursor: pointer;
     color: var(--primary-color-text);
     background-color: var(--backgraund-color-button);
@@ -262,14 +256,14 @@ body {
     letter-spacing: 0.03em;
 }
 
-.projects .button:focus,
-.projects .button:hover {
+.button:focus,
+.button:hover {
     background-color: var(--accent-color);
     color: var(--white-color-text);
 }
 
 
-.projects .name-project {
+.name-project {
     color: var(--primary-color-text);
     font-size: 18px;
     font-weight: 700;
@@ -277,7 +271,7 @@ body {
     letter-spacing: 0.06em;
 }
 
-.projects .type-project {
+.type-project {
     color: var(--second-color);
     font-size: 16px;
     line-height: 1.87;
