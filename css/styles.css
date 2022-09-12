@@ -13,11 +13,13 @@
     --color-logo-black: #000000;
     --primary-color-text: #212121;
     --accent-color: #2196F3;
+    --button-color-active: #188CE8;
     --second-color: #757575;
     --white-color-text: #FFFFFF;
     --backgraund-color-button: #F5F4FA;
     --background-hero: #2F303A;
     --background-our-team: #F5F4FA;
+    --addres-footer: rgba(255, 255, 255, 0.6);
 }
 
 
@@ -30,12 +32,15 @@ body {
     letter-spacing: 0.03em;
 }
 
-
-.visually-hidden {
-    position: absolute;
+/* Чи не забагато тепер властивостей? */
+.visually-hidden:not(:focus):not(:active) {
     clip: rect(0 0 0 0);
-    width: 1px;
+    clip-path: inset(50%);
     height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
     margin: -1px;
 }
 
@@ -125,7 +130,8 @@ body {
 /* Button */
 
 .hero .order {
-    background-color: var(--backgraund-color-button);
+    background-color: var(--accent-color);
+    color: var(--white-color-text);
     border-color: transparent;
     font-family: inherit;
     cursor: pointer;
@@ -139,7 +145,7 @@ body {
 
 .hero .order:hover,
 .hero .order:focus {
-    background-color: var(--accent-color);
+    background-color: var(--button-color-active);
     color: var(--white-color-text);
 }
 
@@ -222,7 +228,7 @@ body {
 
 .address-company .link {
     text-decoration: none;
-    color: var(--second-color);
+    color: var(--addres-footer);
 
     font-style: normal;
     font-size: 14px;
@@ -251,7 +257,7 @@ body {
     text-decoration: none;
 }
 
-.button {
+.projects .button {
     cursor: pointer;
     font-family: inherit;
     color: var(--primary-color-text);
@@ -265,14 +271,14 @@ body {
     letter-spacing: 0.03em;
 }
 
-.button:focus,
-.button:hover {
+.projects .button:focus,
+.projects .button:hover {
     background-color: var(--accent-color);
     color: var(--white-color-text);
 }
 
 
-.name-project {
+.projects .name-project {
     color: var(--primary-color-text);
 
     font-size: 18px;
@@ -281,7 +287,7 @@ body {
     letter-spacing: 0.06em;
 }
 
-.type-project {
+.projects .type-project {
     color: var(--second-color);
 
     font-size: 16px;
